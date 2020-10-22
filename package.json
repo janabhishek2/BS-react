@@ -6,13 +6,15 @@
   "scripts": {
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server"
+    "lite": "lite-server",
+    "deploy" :"gh-pages"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.3.0"
   },
+  "homepage" : "https://www.janabhishek2.github.io/Bootstrap4",
   "dependencies": {
     "bootstrap": "^4.5.3",
     "bootstrap-social": "^5.1.1",
