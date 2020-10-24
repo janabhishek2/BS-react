@@ -41,3 +41,18 @@ body
     border-left:1px solid #ddd;
     padding:10px;
 }
+.carousel{
+    background-color: #512DA8;
+    width:1000px;
+    
+}
+.carousel-item{
+    height:300px;
+    
+}
+.carousel-item img{
+    min-height:300px;
+    position: absolute;
+    top:0px;
+    left:0px;
+}
