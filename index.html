@@ -34,9 +34,52 @@
     
                </ul>
             </div>
-           
+           <div class="navbar-text">
+               <a href="#loginModal" data-toggle="modal"><span class="fa fa-sign-in"> </span> Login</a>
+           </div>
         </div>
     </nav>
+    <div class="modal fade" id="loginModal" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>LogIn</h3>
+                    <span class="close" data-dismiss="modal">
+                        &times;
+                    </span>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row ">
+                            <div class="form-group col-sm-4 col-12">
+                              
+                                <input placeholder="Email" type="text" class="form-control" id="email" name="email">
+                            </div>
+                           <div class="from-group col-sm-4 col-12">
+                              
+                               <input placeholder="Password" type="password" class="form-control" id="pass" name="pass">
+                           </div>
+                           <div class="col-sm col-12 mt-2">
+                               <div class="form-check">
+                                   <input type="checkbox" class="form-check-input" name="remMe" id="remMe"/>
+                                   <label class="form-check-label" for="remMe"> Remember Me </label>
+                               </div>
+                           </div>
+                        </div>
+                        <div class="form-row">
+
+                                <div class="ml-auto ">
+                                    <button role="button" data-dismiss="modal" class="btn btn-secondary" name="cls" id="cls"> &times; Close</button>
+                                </div>
+                                <div class="ml-1">
+                                    <button class="btn btn-primary" role="button" id="sub" value="sub">Submit</button>
+                                </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <header class="jumbotron">
         <div class="container" >
             <div class="row row-header">
@@ -48,7 +91,8 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                <a href="#res" class="btn btn-warning align-self-center bnt-sm mt-3 btn-block" role="button">Reserve Table</a>
+                <a href="#res" class="btn btn-warning align-self-center bnt-sm mt-3 btn-block" role="button"
+                data-toggle="tooltip" data-html="true" title="Or call us at <br><b>+852 1234 5678</b>" data-placement="bottom">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -203,12 +247,20 @@
            </div>
         </div>
     </footer>
+   
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+     
+        $(document).ready(function(){
+            $('a[data-toggle="tooltip"]').tooltip();
+         
+        });
+    </script>
 </body>
 
 </html>
