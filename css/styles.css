@@ -43,8 +43,7 @@ body
 }
 .carousel{
     background-color: #512DA8;
-  
-    
+
 }
 .carousel-item{
     height:300px;
@@ -55,4 +54,10 @@ body
     position: absolute;
     top:0px;
     left:0px;
+}
+#carouselButtons{
+    position: absolute;
+    bottom:0px;
+    right:0px;
+    z-index: 1;
 }
