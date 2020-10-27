@@ -43,7 +43,7 @@ body
 }
 .carousel{
     background-color: #512DA8;
-    position:relative;
+   
 }
 .carousel-item{
     height:300px;
@@ -54,6 +54,9 @@ body
     position: absolute;
     top:0px;
     left:0px;
+}
+#mycarousel{
+    position: relative;
 }
 #carouselButton{
     position: absolute;
